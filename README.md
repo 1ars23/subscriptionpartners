@@ -49,12 +49,11 @@ The resulting JWT should be included in the Authorization header of the API requ
 The API logs all subscription and notification events in the notifications table of the database. Each row in the table represents a single event.
 
 # Database File
-Database **merchantpartnersubscription.sql** file is in database folder. However you can also run migrations pointed in Installation part.
+The database file **merchantpartnersubscription.sql** can be found in the database folder. Alternatively, you can run the database migrations as described in the Installation section.
 
 # Postman Collections
-Postman collections file **subscriptionApis.postman_collection.json** is in apicollections folder.
+The postman collections file **subscriptionApis.postman_collection.json** is located in the apicollections folder.
 
 # Snapshots
-You can also find one readme file with snapshots of api tested in postman
-
+You can also find a snapshot of the tested postman API collections in the apicollections folder.
 
