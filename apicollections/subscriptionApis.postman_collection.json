@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "ac267307-d391-40a6-b728-99a86bebe22e",
+		"name": "subscriptionApis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://www.subscriptionpartner.test/subscribe",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subscriptionId\": \"123456\",\r\n    \"msisdn\": \"123456781190\",\r\n    \"action\": \"sub\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.subscriptionpartner.test/subscribe",
+					"protocol": "http",
+					"host": [
+						"www",
+						"subscriptionpartner",
+						"test"
+					],
+					"path": [
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://www.subscriptionpartner.test/unsubscribe",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZV9wYXRoIjoiQXJzaHlhbi5qcGciLCJpYXQiOjE2Nzc3OTY2ODcsImV4cCI6MTY3Nzc5Njk4N30.X4-IVxjrIn12fuqlsMaxdQr71obH4Kz9BHjV5bGU\"",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"msisdn\": \"123456iuyuityiyiy781190\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.subscriptionpartner.test/unsubscribe",
+					"protocol": "http",
+					"host": [
+						"www",
+						"subscriptionpartner",
+						"test"
+					],
+					"path": [
+						"unsubscribe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
